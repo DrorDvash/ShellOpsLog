@@ -69,3 +69,9 @@ Both scripts are focused on logging the executed commands (without output), so y
 <img src="https://github.com/user-attachments/assets/9178313d-b232-4f84-afe8-41bb67e8e3d6" alt="image" width="800"/>
 
 
+![image](https://github.com/user-attachments/assets/3deaffd9-8dec-4a98-a65c-62c347ac4c04)
+
+
+
+
+
