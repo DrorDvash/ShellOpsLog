@@ -4,6 +4,10 @@ ShellOpsLog is a lightweight command logger designed to automatically capture an
 
 The commands are saved in a CSV file with the columns **Timestamp**, **User**, **Path**, and **Command**, making it easy to use for both client deliverables and internal reviews.
 
+> [!Tip]
+> One thing I like in the way I wrote it, is that the functions are "portable", allowing you to deploy them even on remote hosts (SSH, RDP, etc.) and log your commands. **As always, remember you are responsible for your actions.**
+
+
 ## Overview
 
 This repo contains two implementations of ShellOpsLog:
@@ -21,10 +25,13 @@ Both scripts are focused on logging the executed commands (without output), so y
 ## ![image](https://github.com/user-attachments/assets/993e13fe-6f19-4d32-8285-d0b97440d62b) Bash/Zsh Usage
 1. Place the `ShellOpsLog.sh` file in your file-system or clone the repo.
 2. Adjust and add the following line to your shell startup file (e.g., `~/.bashrc` or `~/.zshrc`):
+
    ```bash
    source /path/to/ShellOpsLog.sh
    ```
-3. Manually call or uncomment the auto-start line at the bottom of the script.
+4. Open a new terminal/tab
+5. Manually call or uncomment the auto-start line at the bottom of the script.
+
    ```bash
    $ start_operation_log
    
@@ -38,6 +45,7 @@ Both scripts are focused on logging the executed commands (without output), so y
 
 ## ![image](https://github.com/user-attachments/assets/7ccae89c-b6ec-4ec3-a278-e58d83812726) PowerShell Usage
 1. Copy the contents of `Microsoft.PowerShell_profile.ps1` into your profile file and save it.
+
    ```powershell
    notepad $PROFILE
 
@@ -46,6 +54,7 @@ Both scripts are focused on logging the executed commands (without output), so y
    ```
 2. Restart powershell or open a new tab
 3. Manually call or uncomment the auto-start line at the bottom of the profile.
+
    ```powershell
    PS> Start-OperationLog
 
@@ -55,3 +64,8 @@ Both scripts are focused on logging the executed commands (without output), so y
    # To stop command logging, run:
    PS> Stop-OperationLog
    ```
+
+## Screenshots
+<img src="https://github.com/user-attachments/assets/9178313d-b232-4f84-afe8-41bb67e8e3d6" alt="image" width="800"/>
+
+
