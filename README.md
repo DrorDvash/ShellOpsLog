@@ -73,5 +73,6 @@ Both scripts are focused on logging the executed commands (without output), so y
 
 
 
-
+## TODO
+CMD still in-work
 
