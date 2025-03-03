@@ -1,5 +1,5 @@
 <#
-    ShellOpsLog - PowerShell Command Logger
+    ShellOpsLog - Command Logger
     ----------------------------------------
     - Logs all executed commands with timestamps
     - Saves commands to a CSV file with the following columns: "Timestamp","User","Path","Command"
