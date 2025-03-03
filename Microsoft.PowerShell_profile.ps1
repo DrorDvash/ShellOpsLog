@@ -2,14 +2,16 @@
     ShellOpsLog - PowerShell Command Logger
     ----------------------------------------
     - Logs all executed commands with timestamps into a CSV.
-    - Saves logs to `C:\Users\<User>\Desktop\OperationLogs\` 
-        or manually define a custom path where to save the output file
-        `Start-OperationLog C:\Projects\MyClient`
+    - Saves commands to a CSV file with the following columns: "Timestamp","User","Path","Command"
 
     ## Usage ##
     - Add this script to $PROFILE (`notepad $PROFILE`)  
     - Restart PowerShell  
-    - Run `Start-OperationLog` to begin logging or uncomment the last line
+    - To begin logging, run:
+        Start-OperationLog
+        OR manually set a custom path where to save the output file
+        Start-OperationLog C:\Projects\MyClient
+    - (Optional) Uncomment the last line to start logging automatically on any new powershell session
 
     ## Credits ##  
     - Created by DrorDvash
@@ -91,5 +93,9 @@ function Stop-OperationLog {
     }
 }
 
-# Optionally auto-start logging (remove or comment out if not desired)
-# Start-OperationLog #-AutoStart
+
+# Uncomment below to prompt question on any new windows/tab -> "Start logging this window to '<path>'? [Y/n]"
+# Start-OperationLog
+
+# Uncomment below to auto-start logging
+# Start-OperationLog -AutoStart
