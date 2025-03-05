@@ -1,6 +1,6 @@
 # ShellOpsLog
 
-ShellOpsLog is a lightweight command logger designed to automatically capture and log all executed commands (without their output) during engagements such as red team operations, internal pt, or whatever usage. 
+ShellOpsLog is a lightweight command logger designed to automatically capture and log all executed commands (without their output) during engagements such as red and purple team operations, internal pt, or whatever usage. 
 
 The commands are saved in a CSV file with the columns **Timestamp**, **User**, **Path**, and **Command**, making it easy to use for both client deliverables and internal reviews.
 
