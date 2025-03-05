@@ -30,7 +30,7 @@ Both scripts are focused on logging the executed commands (without output), so y
    source /path/to/ShellOpsLog.sh
    ```
 4. Open a new terminal/tab
-5. Manually call or uncomment the auto-start line at the bottom of the script.
+5. Manually call or **uncomment the auto-start line at the bottom of the script.**
 
    ```bash
    $ start_operation_log
@@ -53,7 +53,7 @@ Both scripts are focused on logging the executed commands (without output), so y
    New-Item -ItemType File -Path $PROFILE -Force
    ```
 2. Restart powershell or open a new tab
-3. Manually call or uncomment the auto-start line at the bottom of the profile.
+3. Manually call or **uncomment the auto-start line at the bottom of the profile.**
 
    ```powershell
    PS> Start-OperationLog
@@ -64,6 +64,12 @@ Both scripts are focused on logging the executed commands (without output), so y
    # To stop command logging, run:
    PS> Stop-OperationLog
    ```
+
+
+
+## ![image](https://github.com/user-attachments/assets/9e638fba-a993-4344-b081-65f031261161) CMD
+CMD is working but not as I wish for, it has some limitations. I will update soon
+
 
 ## Preview
 
@@ -77,5 +83,5 @@ Both scripts are focused on logging the executed commands (without output), so y
 
 
 ## TODO
-CMD still in-work
+
 
