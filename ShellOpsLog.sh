@@ -116,7 +116,7 @@ stop_operation_log() {
 # Uncomment below to prompt question on any new windows/tab -> "Start logging this window to '<path>'? [Y/n]"
 # start_operation_log
 # OR
-# start_operation_log "$(HOME)/Projects/MyClient"
+# start_operation_log "$HOME/Projects/MyClient"
 
 # Uncomment below to auto-start logging
 # start_operation_log -AutoStart
