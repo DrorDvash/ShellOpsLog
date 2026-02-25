@@ -120,4 +120,7 @@ stop_operation_log() {
 
 # Uncomment below to auto-start logging
 # start_operation_log -AutoStart
+
+# Uncomment below to include logging stdout and stderr using tee
+# exec > >(tee -a $OPERATION_LOG_FILE) 2>&1
 ###############################################################################
